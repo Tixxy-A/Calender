@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+
+import EventCalender from './EventCalender';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="overflow-x-hidden text-gray-300 selection:bg-gray-300 selection:text-black font-inter">
+      <div className="fixed top-0 -z-10 h-full w-full">
+        <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+      </div>
+      <EventCalender/>
     </div>
   );
 }
