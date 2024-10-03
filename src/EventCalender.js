@@ -110,7 +110,7 @@ function EventCalender() {
             {WeekDays.map((day) => {
               return (
                 <div
-                  className="text-gray-400 font-semibold py-2 lg:px-16 px-3 md:6 border text-lg shadow-lg shadow-gray-400/60 rounded-2xl mb-2"
+                  className="text-gray-400 font-semibold py-2 lg:px-16  md:6 border-b-2 lg:border sm:border lg:text-lg text-sm shadow-lg  shadow-gray-400/60 rounded-2xl mb-2"
                   key={day}
                 >
                   {day}
