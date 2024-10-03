@@ -5,7 +5,7 @@ function Model({ close, day, events, setEvents }) {
   const [openUpdate, setOpenUpdate] = useState(false);
   const [update, setUpdate] = useState("");
   const handleDelete = () => {
-    console.log(day);
+    //console.log(day);
     const updatedEvents = events.filter((event) => !isSameDay(event.Day, day));
     setEvents(updatedEvents);
     localStorage.setItem("events", JSON.stringify(updatedEvents));

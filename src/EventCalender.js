@@ -102,7 +102,7 @@ function EventCalender() {
           </button>
         </div>
       ) : (
-        <div className="text-center">
+        <div className="text-center sm:w-full lg:w-2/3 p-8">
           <h1 className="mt-7 text-white font-bold text-2xl">
             {format(currentDate, "MMMM , yyyy")}
           </h1>
@@ -110,7 +110,7 @@ function EventCalender() {
             {WeekDays.map((day) => {
               return (
                 <div
-                  className="text-gray-400 font-semibold py-2 px-16 border text-lg shadow-lg shadow-gray-400/60 rounded-2xl mb-2"
+                  className="text-gray-400 font-semibold py-2 lg:px-16 px-3 md:6 border text-lg shadow-lg shadow-gray-400/60 rounded-2xl mb-2"
                   key={day}
                 >
                   {day}
@@ -124,7 +124,7 @@ function EventCalender() {
               return (
                 <button
                   key={index}
-                  className={`border grid grid-cols-1 items-center justify-center border-blue-700 py-1 h-20 rounded-2xl shadow-xl text-lg shadow-blue-800/30 ${
+                  className={`border grid grid-cols-1 items-center justify-center border-blue-700 sm:py-4 h-20 rounded-2xl shadow-xl text-lg shadow-blue-800/30 ${
                     isToday(day)
                       ? "bg-red-700 text-white text-xl border-black shadow-red-800/30"
                       : ""
@@ -147,7 +147,7 @@ function EventCalender() {
                       return (
                         <div
                           key={e.Title}
-                          className="text-sm bg-green-400 rounded-xl text-black"
+                          className="text-sm mt-1 bg-green-400 rounded-xl text-black"
                         >
                           {e.Title.slice(0, 12)}...
                         </div>
